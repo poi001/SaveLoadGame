@@ -13,6 +13,11 @@ class ASaveLoadGameMode : public AGameModeBase
 
 public:
 	ASaveLoadGameMode();
+
+	virtual void PostLogin(APlayerController* NewController) override;
+
+protected:
+	virtual void BeginPlay() override;
 };
 
 
